@@ -1,0 +1,82 @@
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 150px;
+    position: fixed;
+    width: 85%;
+    top: 0;
+}
+#logo h1{
+    front-size:20px;
+    background: linear-gradient(to right, black,rgb(226,175,7));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+   #nave-link{
+    display: flex;
+    gap: 20px;
+   }
+
+   #nave-link span a{
+    color: black;
+    text-decoration: none;
+   }
+
+   #active{
+    text-decoration: underline;
+   }
+   #img{
+    width: 30px;
+    height: 10px;
+   }
+
+
+   main{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    padding-left: 150px;
+   }
+   h5{
+    color: #fdb703;
+   }
+#content{
+
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#content h1{
+
+    width: 400px;
+    font-size: 60px;
+}
+#content p{
+    width: 400px;
+    height: 30px;
+}
+#button-left{
+    background-color: #FDB703;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border:none ;
+    font-weight: bolder;
+}
+#button-right{
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: transparent;
+}

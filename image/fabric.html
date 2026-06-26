@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://127.0.0.1:5501/html/home.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fabric</title>
+    
+<link rel="stylesheet" href="./fabric_files/home.css"></head>
+<body>
+ <header>
+    <div id="logo">
+        <h1>Fabrice Bikorimana</h1>
+    </div>
+    <div id="nave-link">
+        <span id="active"><a href="http://127.0.0.1:5501/html/home.html"></a>Home</span>
+        <span><a href="http://127.0.0.1:5501/html/home.html">About</a></span>
+        <span><a href="http://127.0.0.1:5501/html/home.html">Contact</a></span>
+    </div>
+ </header>
+ 
+ <main>
+    <div id="content">
+        <h5>SOFT WARE DEVELOPER</h5>
+        <h1>Hello my name is Fabrice</h1>
+        <p>I am fuii stack developer in modertechnology and be able to make goog userfriendly interface in web applicatioon developer</p>
+        <div id="button-container">
+            <button>Her me</button>
+            <button>linkedin</button>
+        </div>
+    </div>
+
+
+    <div></div>
+ </main>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
